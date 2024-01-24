@@ -55,7 +55,7 @@ gulp.task('sass', function() {
 var pug = require('gulp-pug');
 
 gulp.task('pug', () => {
-	return gulp.src(['./*.pug', '!./_*.pug'])
+	return gulp.src(['./pug/*.pug', '!./pug/_*.pug'])
 	.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 	.pipe(pug({
 		pretty: true
@@ -87,7 +87,7 @@ gulp.task('sass:watch', function() {
 });
 
 gulp.task('pug:watch', function() {
-	var watcherPug = gulp.watch('./*.pug', gulp.task('pug'));
+	var watcherPug = gulp.watch('./pug/*.pug', gulp.task('pug'));
 	watcherPug.on('change', function(event) {
 	})
 });
