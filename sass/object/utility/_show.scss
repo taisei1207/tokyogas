@@ -1,0 +1,18 @@
+.u-show-pc {
+	@include mq("pc") {
+		display: block;
+	}
+	@include mq("sp") {
+		display: none;
+	}
+}
+
+.u-show-sp {
+	@include mq("pc") {
+		display: none;
+	}
+	@include mq("sp") {
+		display: block;
+	}
+}
+

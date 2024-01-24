@@ -1,0 +1,16 @@
+.u-hide-pc {
+	@include mq("pc") {
+		display: none;
+	}
+	@include mq("sp") {
+		display: block;
+	}
+}
+.u-hide-sp {
+	@include mq("pc") {
+		display: block;
+	}
+	@include mq("sp") {
+		display: none;
+	}
+}
