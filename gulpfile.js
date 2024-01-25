@@ -49,7 +49,7 @@ gulp.task('sass', function() {
     cascade: false
     })]))
 		.pipe(sourcemaps.write())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./public'));
 });
 
 var pug = require('gulp-pug');
@@ -60,7 +60,7 @@ gulp.task('pug', () => {
 	.pipe(pug({
 		pretty: true
 	}))
-	.pipe(gulp.dest('./'));
+	.pipe(gulp.dest('./public'));
 });
 
 //Browser Syncin
