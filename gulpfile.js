@@ -29,6 +29,8 @@ var imageminOption = [
 	imagemin.svgo()
 ];
 
+gulp.task('build', ['pug', 'sass']);
+
 gulp.task('sass', function() {
 	return gulp.src('./sass/**/*.scss')
 	.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
