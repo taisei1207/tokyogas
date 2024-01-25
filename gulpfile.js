@@ -67,7 +67,7 @@ gulp.task('pug', () => {
 gulp.task( 'browser-sync', done => {
 	browserSync.init({
 		server: {
-			baseDir: './',
+			baseDir: './public/',
 			index: '/index.html'
 		}
 	})
@@ -96,7 +96,7 @@ gulp.task("imagemin", function() {
 		return gulp
 		.src("./base/*.{png,jpg,gif,svg}")
 		.pipe(imagemin(imageminOption))
-		.pipe(gulp.dest("./images"));
+		.pipe(gulp.dest("./public/images"));
 });
 
 gulp.task('file-watch', function() {

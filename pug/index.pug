@@ -7,8 +7,14 @@ html(lang="ja")
     link(rel="stylesheet", href="/style.css")
     
     main 
-      .catchphrase
-        ul.catchphrase-list
+      section.mv
+        h1.mv-ttl 
+          p: span 東京ガスグループ
+          | の
+          p マンション買取査定
+          | なら
+
+        ul.mv-list
           li グループ企業が
             span 直接買取
           li:span お客さまのペースで
@@ -16,20 +22,99 @@ html(lang="ja")
           li:span 最短１日で
             | 回答
         
-        .catchphrase-box 
-          .u-clock カンタン30秒入力
-          
-
-
-      .mv 
-        h2
-          span.mv-c-b 東京ガスグループ
-          | で
-          <br>どうして
-          span.mv-c- マンション買取
-          | を？
-        
         .mv-box 
-          p.mv-box-ttl 東京ガスグループでの<br>マンション買取の位置づけ
-          p.mv-box-txt 東京ガスグループは創業から138年に渡り、首都圏870万件のお客さまを支えてきた日本最大のガス小売り事業を源流とするグループです。
-          p.mv-box-txt 豊かな日常を実現するため、エネルギーに限らず暮らしに寄り添う多くのサービスを提供しています。そのひとつが、東京ガスリノベーションによるマンション買取サービスです。東京ガスリノベーションでは、お客さまから預かった大事な資産を、責任をもって次のお客さまにつなげていけるよう、直接買取を行っています。
+          .u-clock カンタン30秒入力
+          .mv-box-ttl
+            .u-blue 簡易査定
+              | でまずは価格をチェック！
+          p 簡易査定では、マンションを査定するために必要な最低限の項目のほか、<br>ご連絡させていただく情報を入力すれば依頼が完了です
+          .c-btn 簡易査定を試してみる
+
+      section.intro 
+        h2
+          span.intro-c-b 東京ガスグループ
+            | で
+          <br>どうして
+          span.intro-c- マンション買取
+            | を？
+        
+        .intro-box 
+          p.intro-box-ttl 東京ガスグループでの<br>マンション買取の位置づけ
+          p.intro-box-txt 東京ガスグループは創業から138年に渡り、首都圏870万件のお客さまを支えてきた日本最大のガス小売り事業を源流とするグループです。
+          p.intro-box-txt 豊かな日常を実現するため、エネルギーに限らず暮らしに寄り添う多くのサービスを提供しています。そのひとつが、東京ガスリノベーションによるマンション買取サービスです。東京ガスリノベーションでは、お客さまから預かった大事な資産を、責任をもって次のお客さまにつなげていけるよう、直接買取を行っています。
+
+      section.promise
+        h2.c-sec-ttl 買取査定においての<br>東京ガスリノベーションのお約束
+        ul.promise-list 
+          li.promise-item
+            img(src="/images/img_promise1.png", alt="")
+            span 誠実・正直
+            p 私たちはより多くの中古住宅が活躍し続けられるよう、<br>売主様が納得できる説明をします。
+          li.promise-item
+            img(src="images/img_promise2.png", alt="")
+            span 親身・共感
+            p 創意工夫を発揮し、<br>不動産売買における複雑な情報を<br>わかりやすい形で説明します。
+
+      section.about
+        h2.c-sec-ttl 買取査定においての<br>東京ガスリノベーションのお約束            
+        ul.about-list 
+          li:figure 
+            img(src="", alt="")
+            figcaption 
+              span 吉井
+              | 東京ガスリノベーション営業担当
+          li:figure 
+            img(src="", alt="")
+            figcaption 
+              span 岡本
+              | 東京ガスリノベーション営業担当
+
+        p.about-cap ※この2名以外の営業担当がお伺いする場合もございます。
+        p.about-txt 東京ガスグループの信頼に恥じないよう、<br>お客さまの様々なニーズに合わせてより良い提案を行い、<br>良き相談相手となるために最大限の努力をいたします。
+        a.c-link(href="")  東京ガスグループのマンション買取への思いはこちら
+
+      section.feature 
+        h2.u-sec-ttl 直接買取でこんなメリットが！
+
+      section.flow 
+        h2.c-sec-ttl 査定依頼から物件売却までの流れ
+        ul.flow-list 
+          li.flow-left 
+            .flow-item 
+              figure
+                img(src="/images/img_step1.png", alt="")
+                figcaption 買取査定を依頼する
+              p 買取価格を査定するために、物件情報をオンラインフォームにてご入力ください。お申し込みは1分程度で完了します。
+            .flow-item 
+              figure
+                img(src="/images/img_step2.png", alt="")
+                figcaption 査定結果を受け取る
+              p 査定結果を東京ガスリノベーションよりご連絡いたします。最短1日で概算の買取価格が確認できます。
+          li.flow-right
+            .flow-item 
+              figure
+                img(src="/images/img_step1.png", alt="")
+                figcaption 売却を相談する
+              p 東京ガスリノベーションに売却の進め方をご相談ください。売却時期など、ご希望を伺いながら、最終買取価格をご提案し、売却手続きを進めてまいります。
+            .flow-item 
+              figure
+                img(src="/images/img_step2.png", alt="")
+                figcaption 売却完了
+              p 東京ガスリノベーションと売買契約を締結し、決済、引き渡しを行います。
+        
+        p.flow-txt ※東京ガスリノベーションからこれ以上の連絡を求めない場合は、その旨をお伝えください。お断りのご連絡をいただいた後は、ご迷惑な連絡をいたしません。
+        a.c-btn(href="") 簡易査定のご依頼はこちらから
+        a.c-link よくある質問はこちら
+      
+      section.area 
+        img(src="/images/img_map.png", alt="")
+        p 査定対象は東京、神奈川、千葉、埼玉のエリアにあるマンションのみとなります。
+        span （一部対象外エリアがございます）
+
+      section.voice 
+
+      section.sub-visual 
+      
+      section.qa 
+        a.c-btn(href="")  お問い合わせはこちら
+        a.c-link(href="")  よくある質問をもっと見る
