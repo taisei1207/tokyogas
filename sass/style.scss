@@ -3,7 +3,25 @@
 @import "layout/**";
 
 .mv {
-  background: url("/images/bg_mv.jpg") 0 0 / 100%;
+  background: url("/images/bg_mv.jpg") 0 0 / 100% no-repeat;
+  text-align: center;
+  padding: 36px;
+  &-ttl {
+    color: #fff;
+    font-weight: bold;
+    &-head {
+      font-size: 32px;
+      span {
+        font-size: 44px;
+      }
+    }
+    &-content {
+      font-size: 32px;
+      span {
+        font-size: 55px;
+      }
+    }
+  }
 }
 
 .promise {

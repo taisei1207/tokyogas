@@ -1,1 +1,0 @@
-<?php include_once("/yakult/yakult400w/index.html"); ?>

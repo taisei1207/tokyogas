@@ -74,7 +74,7 @@ gulp.task( 'browser-sync', done => {
 	done()
 });
 
-gulp.task( 'browserReload', function(done) {
+gulp.task( 'browserReload',  done =>  {
 	browserSync.reload();
 	done();
 	console.log('Browser reload completed');
@@ -99,9 +99,10 @@ gulp.task("imagemin", function() {
 		.pipe(gulp.dest("./public/images"));
 });
 
-gulp.task('file-watch', function() {
+gulp.task('file-watch',  done => {
 	gulp.watch("**/*.html", gulp.task("browserReload"));
 	gulp.watch("**/*.css", gulp.task("browserReload"));
+	done();
 });
 
 // タスク"task-watch"がgulpと入力しただけでdefaultで実行されるようになる

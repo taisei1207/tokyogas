@@ -2,5 +2,26 @@
   background: #0187DA;
   font-size: 14px;
   color: #fff;
-  padding: 10px;
+  margin: 20px auto;
+  border-radius: 52px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  width: 360px;
+  height: 52px;
+  line-height: 52px;
+  position: relative;
+  box-sizing: border-box;
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("/images/icon_btn.png") 0 0 / 100%;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
