@@ -384,3 +384,20 @@
     margin-bottom: 40px;
   }
 }
+
+.area {
+  padding: 88px 0;
+  background: #E7F2F7;
+  text-align: center;
+  &-img {
+    max-width: 420px;
+    margin: 25px auto;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  span {
+    font-size: 14px;
+  }
+}
