@@ -4,6 +4,11 @@
   text-align: center;
   position: relative;
   line-height: 1.4;
+  span {
+    font-size: 16px;
+    display: block;
+    font-weight: 300;
+  }
   &::after {
     content: "";
     position: absolute;
