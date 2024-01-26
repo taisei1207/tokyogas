@@ -463,3 +463,44 @@
     width: 36%;
   }
 }
+
+.qa {
+  padding: 88px calc(50% - 350px);
+  text-align: center;
+  &-list {
+    margin-top: 35px;
+    text-align: left;
+  }
+  &-item {
+    padding: 25px 0 25px 65px;
+    margin-bottom: 14px;
+    border: solid 1px #000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    position: relative;
+    p {
+      &::before {
+        content: "Q.";
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        color: #0187DA;
+        top: 50%;
+        left: 26px;
+        transform: translateY(-50%);
+        font-family: "Noto Sans JP", sans-serif;
+      }
+    }
+    &::before {
+      content: "";
+      border-top: 3px solid #1eadac;
+      width: 20px;
+      height: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+  }
+}
