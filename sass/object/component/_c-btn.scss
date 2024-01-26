@@ -13,6 +13,7 @@
   line-height: 52px;
   position: relative;
   box-sizing: border-box;
+  border: solid thin #000;
   &::after {
     content: "";
     display: block;
