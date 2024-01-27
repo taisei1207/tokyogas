@@ -4,6 +4,7 @@ html(lang="ja")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous")
     link(rel="stylesheet", href="/style.css")
     
     body 
@@ -125,29 +126,48 @@ html(lang="ja")
 
         section.flow 
           h2.c-sec-ttl 査定依頼から物件売却までの流れ
-          ul.flow-list 
-            li.flow-left 
-              .flow-item 
-                figure
-                  img(src="/images/img_step1.png", alt="")
-                span 買取査定を依頼する
+          .row
+            .row-cap 
+              p ご希望の方のみ！
+              span ※
+            .col-sm-6.col-lg-3.item
+              .flow-box
+                .flow-box-content 
+                  span
+                    img(src="/images/img_step1.png", alt="")                    
+                  div            
+                    span.flow-box-ttl STEP 01
+                    h3 簡易査定を依頼する
                 p 買取価格を査定するために、物件情報をオンラインフォームにてご入力ください。お申し込みは1分程度で完了します。
-              .flow-item 
-                figure
-                  img(src="/images/img_step2.png", alt="")
-                span 査定結果を受け取る
-                p 査定結果を東京ガスリノベーションよりご連絡いたします。最短1日で概算の買取価格が確認できます。
-            li.flow-right
-              .flow-item 
-                figure
-                  img(src="/images/img_step3.png", alt="")
-                span 売却を相談する
-                p 東京ガスリノベーションに売却の進め方をご相談ください。売却時期など、ご希望を伺いながら、最終買取価格をご提案し、売却手続きを進めてまいります。
-              .flow-item 
-                figure
-                  img(src="/images/img_step4.png", alt="")
-                span 売却完了
-                p 東京ガスリノベーションと売買契約を締結し、決済、引き渡しを行います。
+            .col-sm-6.col-lg-3.item
+              .flow-box
+                .flow-box-content
+                  span
+                    img(src="/images/img_step2.png", alt="")                            
+                  div
+                    span.flow-box-ttl STEP 02
+                    h3 査定結果を受け取る
+                p 査定結果を東京ガス提携の買取会社よりご連絡いたします。最短1日で概算の買取価格が確認できます。
+
+            .col-sm-6.col-lg-3.item
+              .flow-box
+                .flow-box-content
+                  span
+                    img(src="/images/img_step3.png", alt="")                  
+                  div
+                    span.flow-box-ttl STEP 03
+                    h3 売却を相談する
+                p 東京ガス提携の買取会社に売却の進め方をご相談ください。売却時期など、ご希望を伺いながら、最終買取価格をご提案し、売却手続きを進めてまいります。
+
+            .col-sm-6.col-lg-3.item
+              .flow-box
+                .flow-box-content
+                  span
+                    img(src="/images/img_step4.png", alt="")                   
+                  div
+                    span.flow-box-ttl STEP 04
+                    h3 売却完了
+                p 東京ガス提携の買取会社と売買契約を締結し、決済、引き渡しを行います。
           
           p.flow-txt ※東京ガスリノベーションからこれ以上の連絡を求めない場合は、その旨をお伝えください。お断りのご連絡をいただいた後は、ご迷惑な連絡をいたしません。
           .c-button-link
