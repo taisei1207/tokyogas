@@ -3,10 +3,14 @@
 @import "layout/**";
 
 .mv {
-  background: url("/images/bg_mv.jpg") 0 0 / 100% no-repeat;
+  background: url("/images/bg_mv-pc.jpg") 0 0 / 100% no-repeat;
   text-align: center;
   padding-top: 36px;
   position: relative;
+  @include mq("sp") {
+    padding: 25px 15px;
+    background: url("/images/bg_mv-sp.jpg") 0 0 / 100% no-repeat;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -21,14 +25,26 @@
     font-weight: bold;
     &-head {
       font-size: 32px;
+      @include mq("sp") {
+        font-size: 14px;
+      }
       span {
         font-size: 44px;
+        @include mq("sp") {
+          font-size: 22px;
+        }
       }
     }
     &-content {
       font-size: 32px;
+      @include mq("sp") {
+        font-size: 18px;
+      }
       span {
         font-size: 55px;
+        @include mq("sp") {
+          font-size: 26px;
+        }
       }
     }
   }
@@ -37,6 +53,7 @@
     justify-content: space-between;
     max-width: 834px;
     margin: 26px auto 0;
+    flex-wrap: wrap;
     li {
       width: calc((100% - 20px) / 3);
       background: #fff;
@@ -50,6 +67,10 @@
       position: relative;
       align-items: center;
       justify-content: center;
+      @include mq("sp") {
+        width: 100%;
+        margin-bottom: 6px;
+      }
       &:nth-of-type(1) {
         &::before {
           position: relative;
@@ -95,6 +116,10 @@
     box-shadow: 3px 3px 15px rgba($color: #000000, $alpha: 0.15) ;
     max-width: 834px;
     margin: 15px auto 0;
+    @include mq("sp") {
+      position: relative;
+      padding: 40px 15px 15px;
+    }
     &-head {
       display: inline-flex;
       margin-bottom: 10px;
@@ -103,17 +128,39 @@
       font-weight: bold;
       font-size: 26px;
       margin-left: 10px;
+      @include mq("sp") {
+        font-size: 14px;
+      }
     }
     p {
       line-height: 1.5;
+    }
+    .c-btn {
+      @include mq("sp") {
+        margin-top: 5px;
+      }
+    }
+    .u-clock {
+      @include mq("sp") {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+      }
     }
   }
 }
 
 .intro {
   padding: 80px 0 130px;
-  background: url("/images/bg_intro.jpg") bottom 0 left 0 / 100% no-repeat;
+  background: url("/images/bg_intro-pc.jpg") bottom 0 left 0 / 100% no-repeat;
   background-color: #E7F2F7;
+  @include mq("sp") {
+    background: url("/images/bg_intro-sp.jpg") bottom 0 left 0 / 100% no-repeat;
+    background-color: #E7F2F7;
+    padding: 40px 15px 15px;
+  }
   &-ttl {
     max-width: 700px;
     text-align: center;
@@ -122,29 +169,55 @@
     margin: 0 auto;
     padding-bottom: 24px;
     position: relative;
+    @include mq("sp") {
+      padding-top: 35px;
+      padding-bottom: 10px;
+      font-size: 16px;
+    }
     &::before {
       content: "";
       width: 84px;
       height: 114px;
       display: block;
-      background: url("/images/img_intro1.png") 0 0 / 100% no-repeat;
+      background: url("/images/img_intro1-pc.png") 0 0 / 100% no-repeat;
       left: 37px;
       bottom: 0;
       position: absolute;
+    }
+    @include mq("sp") {
+      &::before {
+        width: 47px;
+        height: 58px;
+        bottom: auto;
+        top: 0;
+        background: url("/images/img_intro1-sp.png") 0 0 / 100% no-repeat;
+      }
     }
     &::after {
       content: "";
       width: 84px;
       height: 114px;
       display: block;
-      background: url("/images/img_intro2.png") 0 0 / 100% no-repeat;
+      background: url("/images/img_intro2-pc.png") 0 0 / 100% no-repeat;
       right: 37px;
       bottom: 0;
       position: absolute;
     }
+    &::after {
+      @include mq("sp") {
+        width: 47px;
+        height: 58px;
+        bottom: auto;
+        top: 0;
+        background: url("/images/img_intro2-sp.png") 0 0 / 100% no-repeat;
+      }
+    }
     span {
       font-size: 28px;
       font-weight: bold;
+      @include mq("sp") {
+        font-size: 20px;
+      }
     }
   }
   &-box {
@@ -171,28 +244,49 @@
 .promise {
   padding: 88px calc(50% - 513px);
   text-align: center;
+  @include mq("sp") {
+    padding: 15px;
+  }
   &-list {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
+    flex-wrap: wrap;
   }
   &-item {
     padding: 0 0 22px;
     width: calc((100% - 15px) / 2);
     background: #E7F2F7;
+    @include mq("sp") {
+      width: 100%;
+      margin-bottom: 60px;
+    }
     &-img {
       margin: -30px auto 0;
       width: 110px;
+      @include mq("sp") {
+        width: 88px;
+        margin-top: -44px;
+      }
     }
     span {
       font-size: 20px;
       font-weight: bold;
       display: inline-block;
       margin: 15px 0 7px;
+      @include mq("sp") {
+        font-size: 18px;
+        margin-bottom: 10sspx;
+      }
     }
     p {
       font-size: 16px;
       line-height: 1.5;
+      @include mq("sp") {
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: left;
+      }
     }
   }
 }
@@ -200,15 +294,23 @@
 .about {
   text-align: center;
   padding-bottom: 88px;
+  @include mq("sp") {
+    padding: 15px;
+  }
   &-list {
     max-width: 700px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    flex-wrap: wrap;
     li {
       width: calc((100% - 15px) / 2);
       background: #E7F2F7;
+      @include mq("sp") {
+        width: 100%;
+        margin-bottom: 15px;
+      }
       figcaption {
         font-size: 14px;
         padding: 15px;
@@ -225,10 +327,20 @@
     margin-top: 20px;
     color: #333333;
     font-size: 13px;
+    @include mq("sp") {
+      text-align: left;
+      margin-top: 15px;
+      font-size: 12px;
+    }
   }
   &-txt {
     margin-top: 25px;
     line-height: 1.5;
+    @include mq("sp") {
+      margin-top: 40px;
+      text-align: left;
+      font-size: 14px;
+    }
   }
 }
 
@@ -369,11 +481,18 @@
 
 .mess {
   padding: 88px 0 130px;
-  background: url("/images/bg_intro.jpg") bottom 0 left 0 / 100% no-repeat;
+  background: url("/images/bg_intro-pc.jpg") bottom 0 left 0 / 100% no-repeat;
   background-color: #E7F2F7;
   text-align: center;
+  @include mq("sp") {
+    padding: 15px 15px 110px;
+    background: url("/images/bg_intro-sp.jpg") bottom 0 left 0 / 100% no-repeat;
+  }
   &-list {
     margin-bottom: 70px;
+    @include mq("sp") {
+      margin-bottom: 50px;
+    }
   }
   &-box {
     background: #fff;
@@ -385,11 +504,18 @@
     text-align: left;
     justify-content: space-between;
     position: relative;
+    @include mq("sp") {
+      flex-direction: column-reverse;
+      padding: 25px 15px;
+    }
     &-ttl {
       font-size: 20px;
       font-weight: bold;
       line-height: 1.5;
       margin-bottom: 20px;
+      @include mq("sp") {
+        font-size: 1.125rem;
+      }
     }
     &-txt {
       font-size: 14px;
@@ -423,9 +549,16 @@
   }
   &-content {
     width: 60%;
+    @include mq("sp") {
+      width: 100%;
+    }
   }
   &-img {
     width: 36%;
+    @include mq("sp") {
+      width: 80%;
+      margin: 30px auto;
+    }
   }
 }
 
