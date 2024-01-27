@@ -301,7 +301,6 @@
   }
   &-item {
     padding: 40px;
-    border: solid thin 2px;
     background: #fff;
     width: calc((100% - 15px) / 2);
     border: solid 2px #000;
@@ -438,26 +437,58 @@
     text-align: left;
   }
   &-item {
-    padding: 25px 0 25px 65px;
-    margin-bottom: 14px;
-    border: solid 1px #000;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 4px;
-    position: relative;
-    p {
-      &::before {
-        content: "Q.";
-        font-size: 18px;
-        font-weight: bold;
-        position: absolute;
-        color: #0187DA;
-        top: 50%;
-        left: 26px;
-        transform: translateY(-50%);
-        font-family: "Noto Sans JP", sans-serif;
+    .qa-header {
+      padding: 25px 0 25px 65px;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-bottom: 14px;
+      border: solid 1px #000;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 4px;
+      position: relative;
+      p {
+        &::before {
+          content: "Q.";
+          font-size: 18px;
+          font-weight: bold;
+          position: absolute;
+          color: #0187DA;
+          top: 50%;
+          left: 26px;
+          transform: translateY(-50%);
+          font-family: "Noto Sans JP", sans-serif;
+        }
+      }
+      &.open {
+        .qa-item-icon {
+          transform: rotate(180deg) translateY(50%);
+        }
       }
     }
+    .qa-inner {
+      display: none;
+      padding: 0.8rem 1.7rem 0.8rem 65px;
+      line-height: 1.5;
+      background-color: #ffffff;
+      position: relative;
+      p {
+        &::before {
+          content: "A.";
+          font-size: 18px;
+          font-weight: bold;
+          position: absolute;
+          color: #0187DA;
+          top: 50%;
+          left: 26px;
+          transform: translateY(-50%);
+          font-family: "Noto Sans JP", sans-serif;
+        }
+      }
+    }
+
     &::before {
       content: "";
       border-top: 3px solid #1eadac;
@@ -467,7 +498,25 @@
       bottom: 0;
       right: 0;
     }
-
+    &-icon {
+      border: none;
+      position: absolute;
+      top: 50%;
+      transition: 0.2s;
+      right: 2rem;
+      padding: 0.2rem;
+      &::before {
+        content: "";
+        display: block;
+        background: url("/images/arrow-down.png") top 50% left 0 / 100%;
+        width: 13px;
+        height: 7px;
+        transform: translateY(-50%);
+        top: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
   }
 }
 

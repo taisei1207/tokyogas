@@ -177,21 +177,53 @@
           <h2 class="c-sec-ttl">よくある質問</h2>
           <ul class="qa-list"> 
             <li class="qa-item">
-              <p>査定を依頼した物件は必ず売却しなくてはいけないのでしょうか？</p>
+              <div class="qa-header">
+                <p>査定を依頼した物件は必ず売却しなくてはいけないのでしょうか？</p>
+                <div class="qa-item-icon"></div>
+              </div>
+              <div class="qa-inner"> 
+                <p>親の資産から支払われるのが一般的です。信託を設定するのは親だからです。ただし、家族間の話し合いをして、子どもが費用の一部を負担することも可能です。</p>
+              </div>
             </li>
             <li class="qa-item">
-              <p>査定を依頼できるのはどのような物件ですか？</p>
+              <div class="qa-header">
+                <p>査定を依頼できるのはどのような物件ですか？</p>
+                <div class="qa-item-icon"></div>
+              </div>
+              <div class="qa-inner"> 
+                <p>親の資産から支払われるのが一般的です。信託を設定するのは親だからです。ただし、家族間の話し合いをして、子どもが費用の一部を負担することも可能です。</p>
+              </div>
             </li>
             <li class="qa-item">
-              <p>査定価格そのままで売却できるのでしょうか？</p>
+              <div class="qa-header">
+                <p>査定価格そのままで売却できるのでしょうか？</p>
+                <div class="qa-item-icon"></div>
+              </div>
+              <div class="qa-inner"> 
+                <p>親の資産から支払われるのが一般的です。信託を設定するのは親だからです。ただし、家族間の話し合いをして、子どもが費用の一部を負担することも可能です。</p>
+              </div>
             </li>
             <li class="qa-item">
-              <p>査定にはどの程度時間がかかりますか？</p>
+              <div class="qa-header">
+                <p>査定にはどの程度時間がかかりますか？</p>
+                <div class="qa-item-icon"></div>
+              </div>
+              <div class="qa-inner"> 
+                <p>親の資産から支払われるのが一般的です。信託を設定するのは親だからです。ただし、家族間の話し合いをして、子どもが費用の一部を負担することも可能です。</p>
+              </div>
             </li>
           </ul>
           <div class="button-link"><a class="c-btn" href="">お問い合わせはこちら<img src="/images/icon_btn.png" alt=""></a></div><a class="c-link" href=""> よくある質問をもっと見る</a>
         </section>
       </main>
     </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">   </script>
+    <script>
+      console.log('hello')
+      $(".qa-item .qa-header").click(function () {
+        $(this).next(".qa-inner").slideToggle();
+        $(this).toggleClass("open");
+      });
+    </script>
   </head>
 </html>
