@@ -51,7 +51,7 @@ html(lang="ja")
           .intro-box 
             p.intro-box-ttl 東京ガスグループでの<br>マンション買取の位置づけ
             p.intro-box-txt 東京ガスグループは創業から138年に渡り、首都圏870万件のお客さまを支えてきた日本最大のガス小売り事業を源流とするグループです。
-            p.intro-box-txt 豊かな日常を実現するため、<br>エネルギーに限らず暮らしに寄り添う多くのサービスを提供しています。<br>そのひとつが、東京ガスリノベーションによるマンション買取サービスです。<br>東京ガスリノベーションでは、お客さまから預かった大事な資産を、<br>責任をもって次のお客さまにつなげていけるよう、直接買取を行っています。
+            p.intro-box-txt 豊かな日常を実現するため、<br class="u-hide-sp">エネルギーに限らず暮らしに寄り添う多くのサービスを提供しています。<br>そのひとつが、東京ガスリノベーションによるマンション買取サービスです。<br>東京ガスリノベーションでは、お客さまから預かった大事な資産を、<br class="u-hide-sp">責任をもって次のお客さまにつなげていけるよう、直接買取を行っています。
 
         section.promise
           h2.c-sec-ttl 買取査定においての<br>東京ガスリノベーションのお約束
@@ -113,7 +113,7 @@ html(lang="ja")
               span 
                 .c-accent 選べる
                 | 引き渡し時期
-              p 新居の入居時期など、<br>可能な限り売主様の予定を優先します。
+              p 新居の入居時期など、<br class="u-hide-sp">可能な限り売主様の予定を優先します。
                 small ※
             li.merit-item 
               span 
@@ -121,7 +121,7 @@ html(lang="ja")
                 | 売却
               p 宣伝や広告活動を行いませんので、<br>周囲に知られずに売却することが可能です。
           p.merit-cap 場合によってはご要望に添えない場合がございます。 
-          p.merit-txt お話を伺って買取よりも仲介によるご売却の方が良いと感じた場合など、<br>時には自分たちのサービスに繋がらない提案もします。<br>お客さまが納得したうえで不動産のご売却をいただけるように、全力でサポートさせていただきますので、<br>お気軽に査定のご相談にお越しください。
+          p.merit-txt お話を伺って買取よりも仲介によるご売却の方が良いと感じた場合など、<br class="u-hide-sp">時には自分たちのサービスに繋がらない提案もします。<br>お客さまが納得したうえで不動産のご売却をいただけるように、全力でサポートさせていただきますので、<br class="u-hide-sp">お気軽に査定のご相談にお越しください。
           .button-link
             a.c-btn(href="") 簡易査定を試してみる
               p.fukidashi
@@ -132,49 +132,52 @@ html(lang="ja")
 
         section.flow 
           h2.c-sec-ttl 査定依頼から物件売却までの流れ
-          .row
-            .row-cap 
-              p ご希望の方のみ！
-              span ※
-            .col-sm-6.col-lg-3.item
-              .flow-box
-                .flow-box-content 
-                  span
-                    img(src="/images/img_step1.png", alt="")                    
-                  div            
-                    span.flow-box-ttl STEP 01
-                    h3 簡易査定を依頼する
-                p 買取価格を査定するために、物件情報をオンラインフォームにてご入力ください。お申し込みは1分程度で完了します。
-            .col-sm-6.col-lg-3.item
-              .flow-box
-                .flow-box-content
-                  span
-                    img(src="/images/img_step2.png", alt="")                            
-                  div
-                    span.flow-box-ttl STEP 02
-                    h3 査定結果を受け取る
-                p 査定結果を東京ガス提携の買取会社よりご連絡いたします。最短1日で概算の買取価格が確認できます。
+          .r
+            .row-left.row 
+              .col-sm-12.col-lg-6.item
+                .flow-box
+                  .flow-box-content 
+                    span
+                      img(src="/images/img_step1.png", alt="")                    
+                    div            
+                      span.flow-box-ttl STEP 01
+                      h3 簡易査定を依頼する
+                  p 買取価格を査定するために、物件情報をオンラインフォームにてご入力ください。お申し込みは1分程度で完了します。
+              .col-sm-12.col-lg-6.item
+                .flow-box
+                  .flow-box-content
+                    span
+                      img(src="/images/img_step2.png", alt="")                            
+                    div
+                      span.flow-box-ttl STEP 02
+                      h3 査定結果を受け取る
+                  p 査定結果を東京ガス提携の買取会社よりご連絡いたします。最短1日で概算の買取価格が確認できます。
 
-            .col-sm-6.col-lg-3.item
-              .flow-box
-                .flow-box-content
-                  span
-                    img(src="/images/img_step3.png", alt="")                  
-                  div
-                    span.flow-box-ttl STEP 03
-                    h3 売却を相談する
-                p 東京ガス提携の買取会社に売却の進め方をご相談ください。売却時期など、ご希望を伺いながら、最終買取価格をご提案し、売却手続きを進めてまいります。
+            .row-right.row
+              .col-sm-12.col-lg-6.item
+                .flow-box
+                  .flow-box-content
+                    span
+                      img(src="/images/img_step3.png", alt="")                  
+                    div
+                      span.flow-box-ttl STEP 03
+                      h3 売却を相談する
+                  p 東京ガス提携の買取会社に売却の進め方をご相談ください。売却時期など、ご希望を伺いながら、最終買取価格をご提案し、売却手続きを進めてまいります。
 
-            .col-sm-6.col-lg-3.item
-              .flow-box
-                .flow-box-content
-                  span
-                    img(src="/images/img_step4.png", alt="")                   
-                  div
-                    span.flow-box-ttl STEP 04
-                    h3 売却完了
-                p 東京ガス提携の買取会社と売買契約を締結し、決済、引き渡しを行います。
-          
+              .col-sm-12.col-lg-6.item
+                .flow-box
+                  .flow-box-content
+                    span
+                      img(src="/images/img_step4.png", alt="")                   
+                    div
+                      span.flow-box-ttl STEP 04
+                      h3 売却完了
+                  p 東京ガス提携の買取会社と売買契約を締結し、決済、引き渡しを行います。
+
+              .row-cap 
+                p ご希望の方のみ！
+                span ※
+
           p.flow-txt ※東京ガスリノベーションからこれ以上の連絡を求めない場合は、その旨をお伝えください。お断りのご連絡をいただいた後は、ご迷惑な連絡をいたしません。
           .c-button-link
             a.c-btn(href="") 簡易査定のご依頼はこちらから
