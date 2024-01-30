@@ -757,7 +757,7 @@
     width: 100%;
     margin: 40px 0 0;
   }
-  .item {
+  .flow-item {
     position: relative;
     @include mq("sp") {
       margin-bottom: 50px;
@@ -887,7 +887,7 @@
     }
   }
   &-left {
-    .item {
+    .flow-item {
     &:not(:first-child) {
       &::before {
         content: "";
@@ -907,7 +907,7 @@
     @include mq("sp") {
       padding: 0 15px;
     }
-    .item {
+    .flow-item {
       &:not(:first-child) {
         &::before {
           content: "";
@@ -947,4 +947,72 @@
       }
     }
   }
+}
+
+.voice {
+  padding: 50px;
+  .sliders {
+    margin-top: 40px;
+  }
+  .item {
+    border: solid 2px #000;
+    border-radius: 4px;
+    padding: 25px;
+    overflow: hidden;
+    height: 100%;
+  }
+  .slider {
+    &-head {
+      border-bottom: solid 2px #C9C9C9;
+      display: flex;
+      padding-bottom: 15px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      figcaption {
+        margin-left: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5;
+      }
+    }
+    &-content {
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.owl-carousel .nav-btn {
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  cursor: pointer;
+  top: 30% !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .prev-slide {
+  background: url("/images/icon_btn2.png") no-repeat scroll 0 0 / 100%;
+  left: -33px;
+}
+
+.owl-carousel .next-slide {
+  background: url("/images/icon_btn1.png") no-repeat scroll 0 0 / 100%;
+  right: -33px;
+}
+
+.owl-carousel .prev-slide:hover {
+  opacity: 0.8;
+}
+
+.owl-carousel .next-slide:hover {
+  opacity: 0.8;
 }

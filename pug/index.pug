@@ -5,6 +5,8 @@ html(lang="ja")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous")
+    link(rel="stylesheet", href="/assets/owl.carousel.min.css")
+    link(rel="stylesheet", href="/assets/owl.theme.default.css")
     link(rel="stylesheet", href="/style.css")
     
     body 
@@ -36,7 +38,7 @@ html(lang="ja")
                 | でまずは価格をチェック！
             p.u-hide-sp 簡易査定では、マンションを査定するために必要な最低限の項目のほか、<br>ご連絡させていただく情報を入力すれば依頼が完了です
             .c-btn 簡易査定を試してみる
-              img(src="/images/icon_btn.png", alt="")                        
+              img(src="/images/icon_btn1.png", alt="")                        
 
         section.intro 
           h2.intro-ttl
@@ -90,7 +92,7 @@ html(lang="ja")
                 span.arrow-box
                   i 
                   span カンタン30秒
-              img(src="/images/icon_btn.png", alt="")
+              img(src="/images/icon_btn1.png", alt="")
 
         section.feature 
           .feature-head 
@@ -128,13 +130,13 @@ html(lang="ja")
                 span.arrow-box
                   i 
                   span カンタン30秒
-              img(src="/images/icon_btn.png", alt="")
+              img(src="/images/icon_btn1.png", alt="")
 
         section.flow 
           h2.c-sec-ttl 査定依頼から物件売却までの流れ
           .r
             .row-left.row 
-              .col-sm-12.col-lg-6.item
+              .col-sm-12.col-lg-6.flow-item
                 .flow-box
                   .flow-box-content 
                     span
@@ -143,7 +145,7 @@ html(lang="ja")
                       span.flow-box-ttl STEP 01
                       h3 簡易査定を依頼する
                   p 買取価格を査定するために、物件情報をオンラインフォームにてご入力ください。お申し込みは1分程度で完了します。
-              .col-sm-12.col-lg-6.item
+              .col-sm-12.col-lg-6.flow-item
                 .flow-box
                   .flow-box-content
                     span
@@ -154,7 +156,7 @@ html(lang="ja")
                   p 査定結果を東京ガス提携の買取会社よりご連絡いたします。最短1日で概算の買取価格が確認できます。
 
             .row-right.row
-              .col-sm-12.col-lg-6.item
+              .col-sm-12.col-lg-6.flow-item
                 .flow-box
                   .flow-box-content
                     span
@@ -164,7 +166,7 @@ html(lang="ja")
                       h3 売却を相談する
                   p 東京ガス提携の買取会社に売却の進め方をご相談ください。売却時期など、ご希望を伺いながら、最終買取価格をご提案し、売却手続きを進めてまいります。
 
-              .col-sm-12.col-lg-6.item
+              .col-sm-12.col-lg-6.flow-item
                 .flow-box
                   .flow-box-content
                     span
@@ -184,7 +186,7 @@ html(lang="ja")
               p.fukidashi
                 span.arrow-box
                   span.arrow-red まずはSTEP01
-              img(src="/images/icon_btn.png", alt="")
+              img(src="/images/icon_btn1.png", alt="")
           a.c-link よくある質問はこちら
         
         section.area 
@@ -195,6 +197,38 @@ html(lang="ja")
           span （一部対象外エリアがございます）
 
         section.voice 
+          h2.c-sec-ttl お客さまのお喜びの声
+          .owl-carousel.owl-theme.sliders
+            .slider.item
+              figure.slider-head
+                img(src="/images/img_voice1.png", alt="")
+                figcaption スピーディな対応<br>と安心感が良かった
+              .slider-content 
+                p 部屋の確認を急なスケジュールにも関わらず希望の日時でご対応をいただいた点が決め手でした。部屋の確認から価格の提示までスピーディーに対応いただいたこと、営業担当者の誠実な人柄、東京ガスグループということで安心して売却ができたのが良かった点です。
+            .slider.item
+              figure.slider-head
+                img(src="/images/img_voice2.png", alt="")
+                figcaption 売却の決心が<br>つきました
+              .slider-content 
+                p 売却しようと考えていませんでしたが、ちょうど住まなくなったタイミングに声をかけてもらえて、売却の決心がつきました！
+            .slider.item
+              figure.slider-head
+                img(src="/images/img_voice3.png", alt="")
+                figcaption スピーディな対応<br>と安心感が良かった
+              .slider-content 
+                p 売却しようと考えていませんでしたが、ちょうど住まなくなったタイミングに声をかけてもらえて、売却の決心がつきました！
+            .slider.item
+              figure.slider-head
+                img(src="/images/img_voice4.png", alt="")
+                figcaption スピーディな対応<br>と安心感が良かった
+              .slider-content 
+                p 売却しようと考えていませんでしたが、ちょうど住まなくなったタイミングに声をかけてもらえて、売却の決心がつきました！
+            .slider.item
+              figure.slider-head
+                img(src="/images/img_voice3.png", alt="")
+                figcaption 助かりました！
+              .slider-content 
+                p 親の介護で忙しくて売却のことを何も考えられていなかったので、御社と出会えてよかった、助かりました！
 
         section.mess 
           h2.c-sec-ttl 東京ガスグループの<br>マンション買取への思い
@@ -217,7 +251,7 @@ html(lang="ja")
                 span.arrow-box
                   i 
                   span カンタン30秒
-              img(src="/images/icon_btn.png", alt="")
+              img(src="/images/icon_btn1.png", alt="")
 
         section.qa 
           h2.c-sec-ttl よくある質問
@@ -249,12 +283,13 @@ html(lang="ja")
 
           .button-link
             a.c-btn(href="") お問い合わせはこちら
-              img(src="/images/icon_btn.png", alt="")            
+              img(src="/images/icon_btn1.png", alt="")            
           a.c-link(href="")  よくある質問をもっと見る
 
     script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")    
+    script(src="/assets/owl.carousel.min.js")
+    script(src="/main.js")
     script
-      | console.log('hello')
       | $(".qa-item .qa-header").click(function () {
       |   $(this).next(".qa-inner").slideToggle();
       |   $(this).toggleClass("open");
