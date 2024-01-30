@@ -45,6 +45,11 @@ owl.find('.owl-item').each(function() {
 
 owl.find('.owl-item').height(maxHeight);
 
+$(".qa-item .qa-header").click(function () {
+    $(this).next(".qa-inner").slideToggle();
+    $(this).toggleClass("open");
+});
+
 // $(".faq-item").click(function (){
 //     $(this).parent().parent().find("a").removeClass("active");
 //     $(this).addClass("active");
