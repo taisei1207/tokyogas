@@ -543,6 +543,8 @@
     @include mq("sp") {
       padding: 0 15px;
       text-align: left;
+      font-size: 12px;
+      line-height: 1.5;
     }
   }
   .c-sec-ttl {
@@ -760,7 +762,7 @@
       &::before {
         content: "";
         display: block;
-        background: url("/images/arrow-down.png") top 50% left 0 / 100%;
+        background: url("/images/arrow-down-qa.png") top 50% left 0 / 100%;
         width: 13px;
         height: 7px;
         transform: translateY(-50%);
@@ -776,10 +778,14 @@
   margin: 40px auto 0;
 }
 
-.r {
+.row-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 30px;
+  @include mq("sp") {
+    margin-top: 0;
+  }
 }
 
 .row {
@@ -796,19 +802,26 @@
   }
   .flow-item {
     position: relative;
-    @include mq("sp") {
-      margin-bottom: 50px;
-    }
     &:not(:first-child) {
+      @include mq("sp") {
+        margin-top: 50px;
+      }
       &::before {
         content: "";
         width: 12px;
         height: 12px;
-        background: url("/images/arrow-right.png") no-repeat;
+        background: url("/images/arrow-right.png") no-repeat 0 0 / 100%;
         position: absolute;
         left: -6px;
         top: 48%;
-        background-size: 100%;
+        @include mq("sp") {
+          width: 19px;
+          height: 22px;
+          left: 50%;
+          top: -35px;
+          background: url("/images/arrow-down.png") no-repeat 50% 50% / 100%;
+          transform: translateX(-50%);
+        }
       }
     }
   }
@@ -826,7 +839,6 @@
       @include mq("sp") {
         display: flex;
         align-items: center;
-        justify-content: center;
       }
       > div {
         @include mq("sp") {
@@ -881,6 +893,7 @@
       margin-top: 4px;
       margin-bottom: 6px;
       @include mq("sp") {
+        margin-top: 10px;
         text-align: left;
       }
     }
@@ -921,9 +934,15 @@
       padding-right: 10px;
       background: #fff;
       font-size: 13px;
+      @include mq("sp") {
+        font-size: 12px;
+      }
     }
   }
   &-left {
+    @include mq("sp") {
+      margin-bottom: 50px;
+    }
     .flow-item {
     &:not(:first-child) {
       &::before {
@@ -967,6 +986,14 @@
     left: -22px;
     top: 48%;
     background-size: 100%;
+    @include mq("sp") {
+      width: 19px;
+      height: 22px;
+      left: 50%;
+      top: -70px;
+      background: url("/images/arrow-down.png") no-repeat 50% 50% / 100%;
+      transform: translateX(-50%);
+      }
     }          
     &::after {
       content: "";
@@ -974,11 +1001,13 @@
       width: 100%;
       height: calc(100% + 40px);
       border: solid 1px #0187DA;
+      border-radius: 6px;
       position: absolute;
       right: 0;
       top: 0;
       transform: translateY(-20px);
       @include mq("sp") {
+        border: solid 2px #0187DA;
         width: calc(100% - 30px);
         left: 15px;
       }
