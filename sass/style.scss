@@ -411,7 +411,7 @@
     span {
       font-size: 20px;
       @include mq("sp") {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
     p {
@@ -424,12 +424,17 @@
       }    
     }
   }
+  .c-sec-ttl {
+    span {
+      font-size: 18px;
+    }
+  }
   &-table-container {
     @include mq("sp") {
       overflow-x: scroll;
       padding-bottom: 25px;
     }
-    &::-webkit-scrollbar {
+    &::-webkit-scrollbar, &. {
       height: 8px;
       border-radius: 8px;
       background: #D8D8D8;
