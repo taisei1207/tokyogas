@@ -21,15 +21,15 @@ $('.sliders').owlCarousel({
             smartSpeed: 1000,
         },
         1280:{
-            items:4,
+            items:3.5,
             margin: 16
         },
         1500:{
-            items:4,
+            items:3.5,
             margin: 16
         },
         1600:{
-            items:4,
+            items: 3.5,
             margin: 16
         }
     }
@@ -49,6 +49,9 @@ $(".qa-item .qa-header").click(function () {
     $(this).next(".qa-inner").slideToggle();
     $(this).toggleClass("open");
 });
+
+var simpleBar = $('.feature-table-container');
+
 
 // $(".faq-item").click(function (){
 //     $(this).parent().parent().find("a").removeClass("active");

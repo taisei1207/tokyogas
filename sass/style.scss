@@ -434,16 +434,6 @@
       overflow-x: scroll;
       padding-bottom: 25px;
     }
-    &::-webkit-scrollbar {
-      // height: 8px;
-      // border-radius: 8px;
-      // background: #D8D8D8;
-    }
-    &::-webkit-scrollbar-thumb {
-      // height: 8px;
-      // background: #808080;
-      // border-radius: 8px;
-    }
     .simplebar-scrollbar::before {
       background: #808080;
       border-radius: 8px;
@@ -1103,7 +1093,7 @@
 }
 
 .voice {
-  padding: 50px 90px;
+  padding: 50px calc(50% - 500px);
   @include mq("sp") {
     padding: 80px 15px;
   }
@@ -1146,7 +1136,8 @@
   position: absolute;
   width: 30px;
   cursor: pointer;
-  top: 30% !important;
+  top: 45% !important;
+  transform: translateY(-50%);
   @include mq("sp") {
     display: none;
   }
