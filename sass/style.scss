@@ -590,7 +590,7 @@
   background: #E7F2F7;
   text-align: center;
   @include mq("sp") {
-    padding: 30px 15px;
+    padding: 80px 15px;
   }
   &-img {
     max-width: 420px;
@@ -599,6 +599,7 @@
   p {
     font-size: 16px;
     margin-bottom: 8px;
+    line-height: 1.5;
     @include mq("sp") {
       text-align: left;
       font-size: 14px;
