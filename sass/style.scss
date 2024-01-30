@@ -380,8 +380,28 @@
       }    
     }
   }
+  &-table-container {
+    @include mq("sp") {
+      overflow-x: scroll;
+      padding-bottom: 25px;
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+      border-radius: 8px;
+      background: #D8D8D8;
+      
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 10px;
+      background: #808080;
+      border-radius: 8px;
+    }
+  }
   &-table {
     margin-top: 30px;
+    @include mq("sp") {
+      width: 768px;
+    }
   }
   &-cap {
     font-size: 13px;
