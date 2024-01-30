@@ -434,7 +434,7 @@
       overflow-x: scroll;
       padding-bottom: 25px;
     }
-    &::-webkit-scrollbar, &. {
+    &::-webkit-scrollbar {
       height: 8px;
       border-radius: 8px;
       background: #D8D8D8;
@@ -1093,7 +1093,7 @@
 }
 
 .voice {
-  padding: 50px;
+  padding: 50px 90px;
   @include mq("sp") {
     padding: 80px 15px;
   }
@@ -1150,12 +1150,12 @@
 
 .owl-carousel .prev-slide {
   background: url("/images/icon_btn2.png") no-repeat scroll 0 0 / 100%;
-  left: -33px;
+  left: -53px;
 }
 
 .owl-carousel .next-slide {
   background: url("/images/icon_btn1.png") no-repeat scroll 0 0 / 100%;
-  right: -33px;
+  right: -53px;
 }
 
 .owl-carousel .prev-slide:hover {
@@ -1164,4 +1164,13 @@
 
 .owl-carousel .next-slide:hover {
   opacity: 0.8;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+  border: solid 1px #000;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #000;
 }
