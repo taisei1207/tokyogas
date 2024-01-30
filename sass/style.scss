@@ -435,14 +435,24 @@
       padding-bottom: 25px;
     }
     &::-webkit-scrollbar {
-      height: 8px;
-      border-radius: 8px;
-      background: #D8D8D8;
+      // height: 8px;
+      // border-radius: 8px;
+      // background: #D8D8D8;
     }
     &::-webkit-scrollbar-thumb {
-      height: 8px;
+      // height: 8px;
+      // background: #808080;
+      // border-radius: 8px;
+    }
+    .simplebar-scrollbar::before {
       background: #808080;
       border-radius: 8px;
+      height: 8px;
+    }
+    .simplebar-track {
+      border-radius: 8px;
+      height: 8px;
+      background-color: #D8D8D8;
     }
   }
   &-table {
