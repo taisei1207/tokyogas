@@ -9,11 +9,10 @@ html {
 
 body {
 	margin: 0;
-	overflow: hidden;
-	letter-spacing: 0.05em;
-	color: #534A46;
+	letter-spacing: 0.06em;
+	color: #000;
 	line-height: 1.5;
-	font-family: 'meiryo', sans-serif;
+	font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Osaka", "sans-serif";
 }
 
 
@@ -35,7 +34,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	box-sizing: border-box;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */

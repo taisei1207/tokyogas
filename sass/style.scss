@@ -26,8 +26,36 @@
   }
   &-ttl {
     color: #fff;
+    display: inline-block;
     font-weight: bold;
+    position: relative;
     font-family: "DNP 秀英丸ゴシック Std", "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3";
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: -3em;
+      display: block;
+      width: 44px;
+      height: 44px;
+      background: url("/images/img_mv-ttl1.png") 50% 50% / 100%;
+      @include mq("sp") {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      right: -3em;
+      display: block;
+      width: 44px;
+      height: 44px;
+      background: url("/images/img_mv-ttl2.png") 50% 50% / 100%;
+      @include mq("sp") {
+        display: none;
+      }
+    }
     @include mq("sp") {
       line-height: 1.5;
     }
@@ -45,6 +73,7 @@
     }
     &-content {
       font-size: 32px;
+      margin-right: 15px;
       @include mq("sp") {
         font-size: 18px;
       }
