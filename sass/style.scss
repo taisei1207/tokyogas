@@ -732,11 +732,12 @@
           font-weight: bold;
           position: absolute;
           color: #0187DA;
-          top: 50%;
+          top: 45%;
           left: 26px;
           transform: translateY(-50%);
           font-family: "Noto Sans JP", sans-serif;
           @include mq("sp") {
+            top: 1.3em;
             left: 12px;
           }
         }
@@ -753,17 +754,24 @@
       line-height: 1.5;
       background-color: #ffffff;
       position: relative;
+      @include mq("sp") {
+        padding: 0 25px 15px 40px;
+      }
       p {
         &::before {
-          content: "A.";
+          content: "A";
           font-size: 18px;
           font-weight: bold;
           position: absolute;
-          color: #0187DA;
-          top: 50%;
+          color: #E44431;
+          top: 1.3em;
           left: 26px;
           transform: translateY(-50%);
           font-family: "Noto Sans JP", sans-serif;
+          @include mq("sp") {
+            left: 12px;
+            top: 0.6em;
+          }
         }
       }
     }
@@ -1049,6 +1057,9 @@
 
 .voice {
   padding: 50px;
+  @include mq("sp") {
+    padding: 80px 15px;
+  }
   .sliders {
     margin-top: 40px;
   }
@@ -1089,6 +1100,9 @@
   width: 30px;
   cursor: pointer;
   top: 30% !important;
+  @include mq("sp") {
+    display: none;
+  }
 }
 
 .owl-carousel .owl-prev.disabled,
