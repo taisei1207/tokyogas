@@ -853,7 +853,7 @@
   }
 }
 
-.row {
+.row-left, .row-right {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -865,6 +865,9 @@
     width: 100%;
     margin: 40px 0 0;
   }
+}
+
+.row {
   .flow-item {
     position: relative;
     &:not(:first-child) {
