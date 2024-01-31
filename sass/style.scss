@@ -614,7 +614,9 @@
   .c-button-link {
     margin: 0 15px;
     .c-btn {
-      font-size: 14px;
+      @include mq("sp") {
+        font-size: 14px;
+      }
     }
   }
 }
