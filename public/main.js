@@ -53,13 +53,10 @@ $(".qa-item .qa-header").click(function () {
 var simpleBar = $('.feature-table-container');
 
 
-// $(".faq-item").click(function (){
-//     $(this).parent().parent().find("a").removeClass("active");
-//     $(this).addClass("active");
-//     var id = $(this).attr("data-id");
-//     var h = 145;
-//     if($(window).width() < 768){
-//         h = 60;
-//     }
-//     $("html, body").animate({ scrollTop: $(id).offset().top - h }, 600);
-// })
+$(".scroll-mess").click(function (){
+    var h = 145;
+    if($(window).width() < 768){
+        h = 60;
+    }
+    $("html, body").animate({ scrollTop: $('#mess').offset().top - h }, 600);
+})
