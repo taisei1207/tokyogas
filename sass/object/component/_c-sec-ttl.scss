@@ -1,26 +1,28 @@
-.c-sec-ttl {
-  font-size: 26px;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  line-height: 1.4;
-  @include mq("sp") {
-    font-size: 1.15rem;
-  }
-  span {
-    font-size: 16px;
-    display: block;
-    font-weight: 300;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    display: block;
-    width: 60px;
-    height: 1px;
-    background: #E44431;
-    transform: translateX(-50%);
+.assess {
+  .c-sec-ttl {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    line-height: 1.4;
+    @include mq("sp") {
+      font-size: 1.15rem;
+    }
+    span {
+      font-size: 16px;
+      display: block;
+      font-weight: 300;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      display: block;
+      width: 60px;
+      height: 1px;
+      background: #E44431;
+      transform: translateX(-50%);
+    }
   }
 }

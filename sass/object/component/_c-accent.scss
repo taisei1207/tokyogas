@@ -1,8 +1,10 @@
-.c-accent {
-  display: inline-block;
-  background-image: radial-gradient(circle at center, #E44431 18%, transparent 18%); /* 点の色とサイズ調整 */
-  background-position: top 0 left 20px; /* 点の位置 */
-  background-repeat: repeat-x; /* 横方向に繰り返し */
-  background-size: 21px 3px; /* 点の間隔とサイズ調整 */
-  padding-top: .4em; /* 縦方向の位置調整 */
+.assess {
+  .c-accent {
+    display: inline-block;
+    background-image: radial-gradient(circle at center, #E44431 18%, transparent 18%); /* 点の色とサイズ調整 */
+    background-position: top 0 left 20px; /* 点の位置 */
+    background-repeat: repeat-x; /* 横方向に繰り返し */
+    background-size: 21px 3px; /* 点の間隔とサイズ調整 */
+    padding-top: .4em; /* 縦方向の位置調整 */
+  }
 }

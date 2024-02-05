@@ -1,18 +1,19 @@
-.u-show-pc {
-	@include mq("pc") {
-		display: block;
+.assess {
+	.u-show-pc {
+		@include mq("pc") {
+			display: block;
+		}
+		@include mq("sp") {
+			display: none;
+		}
 	}
-	@include mq("sp") {
-		display: none;
+	
+	.u-show-sp {
+		@include mq("pc") {
+			display: none;
+		}
+		@include mq("sp") {
+			display: block;
+		}
 	}
 }
-
-.u-show-sp {
-	@include mq("pc") {
-		display: none;
-	}
-	@include mq("sp") {
-		display: block;
-	}
-}
-
