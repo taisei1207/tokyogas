@@ -68,6 +68,10 @@
         height: 0;
         pointer-events: none;
         border: solid transparent;
+        @media screen and (max-width: 540px) {
+          top: 96%;
+          border-right-width: 2px;
+        }      
       }
       &::after {
         margin-left: 1px;
@@ -85,6 +89,10 @@
         height: 0;
         pointer-events: none;
         border: solid transparent;
+        @media screen and (max-width: 540px) {
+          top: 98%;
+          border-right-width: 1px;
+        }      
       }
     }
     img {
@@ -92,6 +100,9 @@
       right: 14px;
       top: 12px;
       position: absolute;
+    }
+    &:hover {
+      opacity: 0.7;
     }
   }
 }

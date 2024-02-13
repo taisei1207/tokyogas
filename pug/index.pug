@@ -15,33 +15,22 @@ html(lang="ja")
     body
       main.assess
         section.mv
-          h1.mv-ttl 
-            p.mv-ttl-head
-              span 東京ガスグループ
-              | の
-            p.mv-ttl-content 
-              span マンション買取査定
-              | なら
-
-          ul.mv-list
-            li グループ企業が
-              span 直接買取
-            li
-              span お客さまのペースで
-              | 対応
-            li
-              span 最短１日で
-              | 回答
-          
-          .mv-box 
-            .mv-box-head
-              .u-clock カンタン30秒入力
-              .mv-box-ttl
-                span.u-blue 簡易査定
-                | でまずは価格をチェック！
-            p.u-hide-sp 簡易査定では、マンションを査定するために必要な最低限の項目のほか、<br>ご連絡させていただく情報を入力すれば依頼が完了です
-            a.c-btn(href="https://miraihoplat-tokyo-gas.com/form")  簡易査定を試してみる
-              img(src="/images/icon_btn1.png", alt="")                        
+          .mv-container
+            img.u-show-pc(src='/images/img_mv-top-pc.png' alt='')
+            img.u-show-sp(src='/images/img_mv-top-sp.png' alt='')
+            .mv-box
+              .mv-box-head
+                .u-clock カンタン30秒入力
+                .mv-box-ttl
+                  span.u-blue 簡易査定
+                  | でまずは価格をチェック！
+              p.u-hide-sp
+                | 簡易査定では、マンションを査定するために必要な最低限の項目のほか、
+                br
+                | ご連絡させていただく情報を入力すれば依頼が完了です
+              a.c-btn(href='https://miraihoplat-tokyo-gas.com/form')
+                | 簡易査定を試してみる
+                img(src='/images/icon_btn1.png' alt='')     
 
         section.intro 
           h2.intro-ttl
