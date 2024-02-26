@@ -11,21 +11,9 @@
     position: relative;
     min-height: 394px;
     @include mq("sp") {
+      background-color: #E7F2F7;
       padding: 25px 15px 10px;
       background: url("/images/bg_mv-sp.jpg") 0 0 / 100% no-repeat;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: #E7F2F7;
-      z-index: -5;
-      @include mq("sp") {
-        width: calc(100% + 30px);
-        left: -15px;
-      }
     }
     &-container {
       max-width: 834px;
@@ -79,11 +67,9 @@
   
   .intro {
     padding: 170px 0 130px;
-    background: url("/images/bg_intro-pc.jpg") bottom 0 left 0 / 100% no-repeat;
+    background: url("/images/bg_intro.png") bottom 0 left 0 / 294px 89px repeat-x;
     background-color: #E7F2F7;
     @include mq("sp") {
-      background: url("/images/bg_intro-sp.jpg") bottom 0 left 0 / 294px repeat-x;
-      background-color: #E7F2F7;
       padding: 10px 15px 110px;
     }
     &-ttl {
