@@ -1011,49 +1011,4 @@
       line-height: 1.5;
     }
   }
-  
-  .owl-carousel .nav-btn {
-    height: 30px;
-    position: absolute;
-    width: 30px;
-    cursor: pointer;
-    top: 45% !important;
-    transform: translateY(-50%);
-    @include mq("sp") {
-      display: none;
-    }
-  }
-  
-  .owl-carousel .owl-prev.disabled,
-  .owl-carousel .owl-next.disabled {
-    pointer-events: none;
-    opacity: 0.2;
-  }
-  
-  .owl-carousel .prev-slide {
-    background: url("/images/icon_btn2.png") no-repeat scroll 0 0 / 100%;
-    left: -53px;
-  }
-  
-  .owl-carousel .next-slide {
-    background: url("/images/icon_btn1.png") no-repeat scroll 0 0 / 100%;
-    right: -53px;
-  }
-  
-  .owl-carousel .prev-slide:hover {
-    opacity: 0.8;
-  }
-  
-  .owl-carousel .next-slide:hover {
-    opacity: 0.8;
-  }
-  
-  .owl-theme .owl-dots .owl-dot span {
-    background: #fff;
-    border: solid 1px #000;
-  }
-  
-  .owl-theme .owl-dots .owl-dot.active span {
-    background: #000;
-  }
 }
