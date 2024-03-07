@@ -968,17 +968,26 @@
     @include mq("sp") {
       padding: 80px 15px;
     }
-    .sliders {
-      margin-top: 40px;
+    &-list {
+      margin: 40px auto 0;
+      max-width: 854px;
+      display: flex;
+      justify-content: space-between;
+      @include mq("sp") {
+        flex-direction: column;
+      }
     }
-    .item {
+    .voice-item {
+      width: calc((100% - 32px) / 3);
       border: solid 2px #000;
       border-radius: 4px;
       padding: 25px;
       overflow: hidden;
       height: 100%;
-    }
-    .slider {
+      @include mq("sp") {
+        width: 100%;
+        margin-bottom: 15px;
+      }
       &-head {
         border-bottom: solid 2px #C9C9C9;
         display: flex;
@@ -995,11 +1004,11 @@
           line-height: 1.5;
         }
       }
-      &-content {
-        margin-top: 15px;
-        font-size: 15px;
-        line-height: 1.5;
-      }
+    }
+    &-content {
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 1.5;
     }
   }
   

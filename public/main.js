@@ -1,49 +1,16 @@
-var owl = $('.sliders');
-$('.sliders').owlCarousel({
-    loop:true,
-    nav:true,
-    navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
-    dots: true,
-    center:true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true, 
-    smartSpeed: 3000,
-    responsive:{
-        0:{
-            items:1,
-            margin: 16,
-            smartSpeed: 1000,
-        },
-        768:{
-            items:2,
-            margin: 16,
-            smartSpeed: 1000,
-        },
-        1280:{
-            items:3.5,
-            margin: 16
-        },
-        1500:{
-            items:3.5,
-            margin: 16
-        },
-        1600:{
-            items: 3.5,
-            margin: 16
-        }
-    }
-})
+var voice = $('.voice-list');
 
 var maxHeight = 0;
 
-owl.find('.owl-item').each(function() {
+voice.find('.voice-item').each(function() {
     if ($(this).height() > maxHeight) {
         maxHeight = $(this).height();
     }
 });
 
-owl.find('.owl-item').height(maxHeight);
+voice.find('.voice-item').height(maxHeight);
+
+
 
 $(".qa-item .qa-header").click(function () {
     $(this).next(".qa-inner").slideToggle();
